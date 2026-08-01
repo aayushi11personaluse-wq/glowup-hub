@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Glow-Up Sanctuary 🌸</title>
+    <title>Wonyoungism Sanctuary — Welcome</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,42 +12,49 @@
 <body>
 
     <header>
-        <div class="logo">🌸 Wonyoungism</div>
+        <div class="logo">🌸 Wonyoungism Hub</div>
         <nav>
-            <a href="#routines">Routines</a>
-            <a href="#study">Study</a>
-            <a href="#mindset">Mindset</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="signin.html" class="nav-btn">Sign In</a>
         </nav>
     </header>
 
     <main class="container">
         <section class="hero">
-            <span class="tag">Daily Motivation</span>
-            <h1 id="quote-display">"Lucky girl syndrome is active."</h1>
-            <p class="subtitle">Curating my best self, every single day.</p>
+            <span class="tag">Your Personal Self-Care Space</span>
+            <h1>Welcome to Your Glow-Up Sanctuary</h1>
+            <p class="subtitle">A dedicated space designed to track your daily routines, curate your mindset, and elevate your productivity with high elegance.</p>
+            <div style="margin-top: 25px;">
+                <a href="signin.html" class="btn">Get Started</a>
+            </div>
         </section>
 
-        <div class="grid">
-            <section id="routines" class="card">
-                <h2>✨ Daily Routines</h2>
-                <ul class="checklist">
-                    <li><input type="checkbox" id="m1"> <label for="m1">Morning skincare & sunscreen</label></li>
-                    <li><input type="checkbox" id="m2"> <label for="m2">Hydrate (1L water)</label></li>
-                    <li><input type="checkbox" id="m3"> <label for="m3">15-min posture & stretch</label></li>
-                </ul>
-            </section>
+        <section id="about" class="card info-section">
+            <h2>✨ About The App</h2>
+            <p>
+                The Wonyoungism Hub is built around romanticizing self-improvement, healthy discipline, and romanticizing your daily growth. Whether you are building glowing skincare habits, focusing during deep study sessions, or maintaining a positive mindset, this sanctuary provides the aesthetic structure to keep you consistent.
+            </p>
+        </section>
 
-            <section id="study" class="card">
-                <h2>📚 Study Corner</h2>
-                <div class="timer-box">
-                    <p>Focus Mode</p>
-                    <div class="timer-display" id="timer">25:00</div>
-                    <button id="start-btn" onclick="toggleTimer()">Start</button>
+        <section id="features" style="margin-top: 30px;">
+            <h2 style="font-family: var(--font-heading); font-size: 1.8rem; text-align: center; margin-bottom: 20px; color: var(--soft-rose);">Inside Your Hub</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🕯️ Habit & Routine Tracker</h3>
+                    <p>Build custom morning, evening, and skincare checklists to keep your habits aligned every day.</p>
                 </div>
-            </section>
-        </div>
+                <div class="card">
+                    <h3>📚 Aesthetic Focus Timer</h3>
+                    <p>Stay productive with an integrated Pomodoro timer tailored for stress-free study sessions.</p>
+                </div>
+                <div class="card">
+                    <h3>💫 Daily Affirmations</h3>
+                    <p>Curated motivation and quotes to cultivate confidence and lucky girl energy.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="script.js"></script>
 </body>
 </html>
