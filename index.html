@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Glow-Up Sanctuary 🌸</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🌸 Wonyoungism</div>
+        <nav>
+            <a href="#routines">Routines</a>
+            <a href="#study">Study</a>
+            <a href="#mindset">Mindset</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="tag">Daily Motivation</span>
+            <h1 id="quote-display">"Lucky girl syndrome is active."</h1>
+            <p class="subtitle">Curating my best self, every single day.</p>
+        </section>
+
+        <div class="grid">
+            <section id="routines" class="card">
+                <h2>✨ Daily Routines</h2>
+                <ul class="checklist">
+                    <li><input type="checkbox" id="m1"> <label for="m1">Morning skincare & sunscreen</label></li>
+                    <li><input type="checkbox" id="m2"> <label for="m2">Hydrate (1L water)</label></li>
+                    <li><input type="checkbox" id="m3"> <label for="m3">15-min posture & stretch</label></li>
+                </ul>
+            </section>
+
+            <section id="study" class="card">
+                <h2>📚 Study Corner</h2>
+                <div class="timer-box">
+                    <p>Focus Mode</p>
+                    <div class="timer-display" id="timer">25:00</div>
+                    <button id="start-btn" onclick="toggleTimer()">Start</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
