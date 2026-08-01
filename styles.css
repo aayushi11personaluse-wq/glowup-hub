@@ -1,0 +1,155 @@
+:root {
+    --bg-color: #FAF6F0;
+    --card-bg: #FFFFFF;
+    --accent-pink: #F4C2C2;
+    --soft-rose: #E8A5A5;
+    --text-color: #4A4A4A;
+    --border-color: #F0E3E3;
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--soft-rose);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--soft-rose);
+}
+
+/* Main Layout */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(244, 194, 194, 0.15);
+}
+
+.tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: var(--accent-pink);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    margin: 15px 0 5px;
+    font-style: italic;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Cards Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--soft-rose);
+}
+
+/* Checklist Styles */
+.checklist li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.checklist input[type="checkbox"] {
+    accent-color: var(--soft-rose);
+    margin-right: 8px;
+}
+
+/* Timer Box */
+.timer-box {
+    text-align: center;
+    padding: 10px;
+}
+
+.timer-display {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+button {
+    background: var(--accent-pink);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: var(--soft-rose);
+}
